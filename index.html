@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portail Applications - 2RC</title>
+    <meta name="description" content="Portail officiel des applications métier de MAGZI.">
+    <meta name="keywords" content="MAGZI">
+    <link rel="stylesheet" href="css/portal.css">
+    <link rel="icon" href="src/LOGO-MAGZI-SA.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="src/apple-touch-icon.png">
+</head>
+<body>
+    <div class="decorative-dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <div class="header-container">
+                <div class="logo-container">
+                    <img src="src/LOGO-MAGZI-SA.png" alt="Logo 2RC" loading="lazy" />
+                </div>
+
+                <div class="logo-section">
+                    <!-- <div class="logo-container">
+                        <img src="src/LOGO-MAGZI-SA.png" alt="Logo CUD" loading="lazy" />
+                    </div> -->
+                    <div>
+                        <h1>Portail d'applications</h1>
+                        <p>MAGZI</p>
+                    </div>
+                </div>
+
+                <div class="logo-container">
+                    <img src="src/kes_ec_logo.png" alt="Logo Kes EC" loading="lazy" />
+                </div>
+            </div>
+            
+            <div class="user-actions">
+                <button id="logoutBtn" class="logout-btn">
+                    🚪 Déconnexion
+                </button>
+            </div>
+        </header>
+
+        <div class="search-container">
+            <span class="search-icon">🔍</span>
+            <input type="text" class="search-input" placeholder="Rechercher une application..." id="searchInput">
+        </div>
+
+        <div class="apps-grid" id="appsGrid">
+            <!-- Les applications seront chargées dynamiquement -->
+        </div>
+
+        <footer class="footer">
+            <p id="copyright"></p>
+            <p class="footer-links">Portail développé par <a href="http://kes-africa.com" target="_blank" rel="noopener noreferrer">KES Energy & Carbon</a> pour faciliter l'accès aux outils métier</p>
+            <div class="footer-links">
+                <a href="#support">Support technique</a>
+                <a href="#documentation">Documentation</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/portal.js"></script>
+</body>
+</html>
