@@ -24,30 +24,30 @@ const applications = [
         status: "maintenance",
         category: "cartographie"
     },
-    // {
-    //     name: "Gestion des feux de signalisation",
-    //     description: "Application pour la gestion intelligente des feux de signalisation, incluant la synchronisation et le suivi des pannes.",
-    //     url: "#",
-    //     image: "src/feux_signalisation_img.jpg",
-    //     status: "maintenance",
-    //     category: "signalisation"
-    // },
-    // {
-    //     name: "Gestion des états des routes",
-    //     description: "Application pour le suivi de l'état des routes, incluant les réparations et les signalements.",
-    //     url: "#",
-    //     image: "src/etat_route_img.jpg",
-    //     status: "maintenance",
-    //     category: "infrastructure"
-    // },
-    // {
-    //     name: "Gestion des canalisations",
-    //     description: "Application pour la gestion des canalisations, incluant l'état et la maintenance.",
-    //     url: "#",
-    //     image: "src/canalisations_img.jpg",
-    //     status: "maintenance",
-    //     category: "infrastructure"
-    // },
+    {
+        name: "Gestion des bouches incendies",
+        description: "Application pour la gestion des bouches incendies",
+        url: "#",
+        image: "src/bouche_incendie.jpg",
+        status: "maintenance",
+        category: "infrastructure"
+    },
+    {
+        name: "Gestion des états des routes",
+        description: "Application pour le suivi de l'état des routes, incluant les réparations et les signalements.",
+        url: "#",
+        image: "src/etat_route_img.jpg",
+        status: "maintenance",
+        category: "infrastructure"
+    },
+    {
+        name: "Gestion des canalisations",
+        description: "Application pour la gestion des canalisations, incluant l'état et la maintenance.",
+        url: "#",
+        image: "src/canalisations_img.jpg",
+        status: "maintenance",
+        category: "infrastructure"
+    },
 ];
 
 // Vérification de l'authentification
