@@ -1,123 +1,83 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Connexion - Portail Applications MAGZI</title>
-<meta name="description" content="Accès sécurisé au portail des applications métier de MAGZI">
-<link rel="stylesheet" href="css/login.css">
-<link rel="icon" href="src/LOGO-MAGZI-SA.png" type="image/x-icon">
-<link rel="apple-touch-icon" href="src/apple-touch-icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - Portail Applications MAGZI</title>
+    <meta name="description" content="Accès sécurisé au portail des applications métier de MAGZI">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" href="src/LOGO-MAGZI-SA.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="src/apple-touch-icon.png">
 </head>
+
 <body>
-<div class="decorative-dots">
-<div class="dot"></div>
-<div class="dot"></div>
-<div class="dot"></div>
-<div class="dot"></div>
-<div class="dot"></div>
-<div class="dot"></div>
-<div class="dot"></div>
-<div class="dot"></div>
-<div class="dot"></div>
-</div>
-<div class="login-container">
-<header class="header">
-<div class="header-container">
-<div class="logo-container">
-<img src="src/LOGO-MAGZI-SA.png" alt="Logo MAGZI" loading="lazy" />
-</div>
-<div class="logo-section">
-<div>
-<h1>Accès au Portail</h1>
-<p>MAGZI - Connexion sécurisée</p>
-</div>
-</div>
-<div class="logo-container">
-<img src="src/kes_ec_logo.png" alt="Logo Kes EC" loading="lazy" />
-</div>
-</div>
-</header>
-<div class="login-form-container">
-<h2 class="login-title">Connexion</h2>
-<div class="error-message" id="errorMessage">
- Informations incorrectes. Veuillez réessayer.
-</div>
-<form id="loginForm">
-<div class="form-group">
-<label for="prenom" class="form-label">Prénom</label>
-<input
-type="text"
-id="prenom"
-name="prenom"
-class="form-input"
-placeholder="Votre prénom"
-required
-autocomplete="given-name"
->
-</div>
-<div class="form-group">
-<label for="nom" class="form-label">Nom</label>
-<input
-type="text"
-id="nom"
-name="nom"
-class="form-input"
-placeholder="Votre nom de famille"
-required
-autocomplete="family-name"
->
-</div>
-<div class="form-group">
-<label for="password" class="form-label">Mot de passe</label>
-<div class="password-container">
-<input
-type="password"
-id="password"
-name="password"
-class="form-input"
-placeholder="Entrez votre mot de passe"
-required
-autocomplete="current-password"
->
-<button type="button" class="toggle-password" id="togglePassword">
+    <div class="decorative-dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+
+    </div>
+    <div class="login-container">
+        <header class="header">
+            <div class="header-container">
+                <div class="logo-container">
+                    <img src="src/LOGO-MAGZI-SA.png" alt="Logo MAGZI" loading="lazy" />
+                </div>
+                <div class="logo-section">
+                    <div>
+                        <h1>Accès au Portail</h1>
+                        <p>MAGZI - Connexion sécurisée</p>
+                    </div>
+                </div>
+                <div class="logo-container">
+                    <img src="src/kes_ec_logo.png" alt="Logo Kes EC" loading="lazy" />
+                </div>
+            </div>
+        </header>
+        <div class="login-form-container">
+            <h2 class="login-title">Connexion</h2>
+            <div class="error-message" id="errorMessage">
+                Informations incorrectes. Veuillez réessayer.
+            </div>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email" class="form-label">Prenom + Nom</label>
+                    <input type="text" id="email" name="email" class="form-input" placeholder="Exemple : Jean.Mboma" required autocomplete="email">
+                </div>
+                <div class="form-group">
+                    <label for="password" class="form-label">Mot de passe</label>
+                    <div class="password-container">
+                        <input type="password" id="password" name="password" class="form-input" placeholder="Entrez votre mot de passe" required autocomplete="current-password">
+                        <button type="button" class="toggle-password" id="togglePassword">
  👁️
 </button>
-</div>
-</div>
-<div class="test-accounts" id="testAccounts">
-<p><strong>Comptes de test :</strong></p>
-<div class="test-account-list">
-<div class="test-account" data-prenom="Jean" data-nom="Dupont" data-password="hello">
-<span class="user-info">Jean Dupont</span>
-<span class="user-role">(hello)</span>
-</div>
-<div class="test-account" data-prenom="Marie" data-nom="Martin" data-password="secret123">
-<span class="user-info">Marie Martin</span>
-<span class="user-role">(secret123)</span>
-</div>
-<div class="test-account" data-prenom="Pierre" data-nom="Bernard" data-password="password">
-<span class="user-info">Pierre Bernard</span>
-<span class="user-role">(password)</span>
-</div>
-</div>
-</div>
-<p class="forgot-password">
- Mot de passe oublié ?
-<a href="mailto:admin@magzi.com?subject=Réinitialisation mot de passe&body=Bonjour,%0D%0A%0D%0AJe souhaite réinitialiser mon mot de passe pour accéder au portail MAGZI.%0D%0A%0D%0APrénom: %0D%0ANom: %0D%0AService: %0D%0A%0D%0AMerci." class="forgot-password-link">
+                    </div>
+                </div>
+
+                <p class="forgot-password">
+                    Mot de passe oublié ?
+                    <a href="mailto:admin@magzi.com?subject=Réinitialisation mot de passe&body=Bonjour,%0D%0A%0D%0AJe souhaite réinitialiser mon mot de passe pour accéder au portail MAGZI.%0D%0A%0D%0APrénom: %0D%0ANom: %0D%0AService: %0D%0A%0D%0AMerci." class="forgot-password-link">
  Contactez l'administrateur
 </a>
-</p>
-<button type="submit" class="login-button">
+                </p>
+                <button type="submit" class="login-button">
  Se connecter
 </button>
-</form>
-<div class="security-notice">
- 🔒 Accès sécurisé au portail des applications métier MAGZI
-</div>
-</div>
-</div>
+            </form>
+            <div class="security-notice">
+                🔒 Accès sécurisé au portail des applications métier MAGZI
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
 
 <script src="js/login.js"></script>
