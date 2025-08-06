@@ -1,13 +1,13 @@
 // Configuration des applications avec images
 const applications = [
-    // {
-    //     name: "Gestion de l'éclairage public",
-    //     description: "Application de gestion de l'éclairage public, incluant la maintenance et le suivi des pannes.",
-    //     url: "http://relec.2rc.kesafrica.com/",
-    //     image: "src/relec_img.jpg",
-    //     status: "active",
-    //     category: "infrastructure"
-    // },
+    {
+        name: "Gestion de l'éclairage public",
+        description: "Application de gestion de l'éclairage public, incluant la maintenance et le suivi des pannes.",
+        url: "http://relec.2rc.kesafrica.com/",
+        image: "src/relec_img.jpg",
+        status: "active",
+        category: "infrastructure"
+    },
     // {
     //     name: "Déclaration des pannes d'éclairage public",
     //     description: "Site web pour permettre aux citoyens de déclarer une panne constatée sur le réseau d'éclairage public.",
@@ -16,14 +16,14 @@ const applications = [
     //     status: "active",
     //     category: "services"
     // },
-    {
-        name: "Cartographie de l'installation de la magzi",
-        description: "Application pour la gestion de la cartographie des installations de la magzi, incluant les points d'éclairage et les infrastructures associées.",
-        url: "#",
-        image: "src/magzi-carto.jpg",
-        status: "maintenance",
-        category: "cartographie"
-    },
+    //{
+    //    name: "Cartographie de l'installation de la magzi",
+    //    description: "Application pour la gestion de la cartographie des installations de la magzi, incluant les points d'éclairage et les infrastructures associées.",
+    //    url: "#",
+    //    image: "src/magzi-carto.jpg",
+    //    status: "maintenance",
+    //    category: "cartographie"
+    //},
     {
         name: "Gestion des bouches incendies",
         description: "Application pour la gestion des bouches incendies",
